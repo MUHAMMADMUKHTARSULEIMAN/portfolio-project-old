@@ -1,0 +1,125 @@
+/* @import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
+body { 
+  font-family: "Signika Negative", sans-serif; 
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.main-tool-bar {
+  height: 80px;
+  background: red;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: ease 0.4s;
+  &--scrolled {
+    height: 40px;
+  }
+}
+
+.scrollable-area {
+  height: 200vh;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  color: #BFBFBF;
+  background-color: #0d0d0d;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  /* margin: 0 auto; */
+  padding: 20px;
+  background-color: #0d0d0d;
+  font-family: "Sharp sans";
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #BFBFBF;
+}
+
+.hero {
+  color: #BFBFBF;
+  background-color: #0d0d0d;
+}
+
+.hero-span {
+  color: #0d0d0d;
+  background-color: #BFBFBF;
+}
+
+.menu {
+  width: 2.5rem;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  background-color: #0d0d0d;
+  color: #BFBFBF;
+  padding: 0px 20px;
+  height: calc(100vh - 60px);
+}
+
+.home-para {
+  font-family: "Cabinet Grotesk";
+  font-size: small;
+}
+
+.home-main {
+  font-family: "Sharp Sans";
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.name-stroke {
+  color: transparent;
+  -webkit-text-stroke-color: #BFBFBF;
+  -webkit-text-stroke-width: 1px;
+}
+
+.contact-image-container {
+  width: 100%;
+  margin: 50px 0;
+  text-align: center;
+  font-family: "Fraunces";
+  font-style: italic;
+  font-size: small;
+  font-weight: 300;
+}
+
+.contact-image {
+  width: 100%;
+}
+
+.contact-container {
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.contact-heading {
+  font-size: .75rem;
+  font-weight: 350;
+  font-family: "Fraunces";
+}
+
+.contact-body {
+  font-weight: 500;
+  font-family: "Cabinet Grotesk";
+  line-height: 1.5rem;
+}
