@@ -45,7 +45,7 @@ header {
   align-items: center;
   height: 60px;
   /* margin: 0 auto; */
-  padding: 20px;
+  padding: 20px 30px;
   background-color: #0d0d0d;
   font-family: "Sharp sans";
   font-weight: 600;
@@ -122,4 +122,36 @@ header {
   font-weight: 500;
   font-family: "Cabinet Grotesk";
   line-height: 1.5rem;
+}
+
+.projects-container {
+  background-color: #0d0d0d;
+  color: #BFBFBF;
+  /* margin: 70px 30px; */
+  /* text-align: center; */
+}
+
+.projects-title {
+  margin: 70px auto 50px;
+  text-align: center;
+}
+
+.projects-title p:nth-child(1) {
+  margin-bottom: 12px;
+}
+
+.project-container {
+  margin: 0 30px 50px;
+}
+
+.project-image {
+  width: 100%;
+  margin: 0;
+}
+
+.project-info {
+  color: #0d0d0d;
+  margin: 0;
+  background-color: #BFBFBF;
+  /* padding: 50px 25px; */
 }

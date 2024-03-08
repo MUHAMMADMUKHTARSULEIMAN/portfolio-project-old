@@ -21,33 +21,36 @@ export default function Projects() {
   }, [])
   const data = useLoaderData();
   return (
-    <>
-      <p>PROJECTS</p>
-      <p>Stuff I&apos;ve done</p>
+    <main className="projects-container">
+      <div className="projects-title">
+        <p className="project-sub-title">PROJECTS</p>
+        <p>Stuff I did</p>
+      </div>
+
       <Suspense fallback={<h1>Loading...</h1>}>
         <Await resolve={data.projects}>
           {projects => {
             const projectsMap = projects.map(project => {
               return (
                 <div key={project.id}>
-                  {windowWidth < 650 || project.id % 2 === 0
+                  {windowWidth < 650 || project.id % 2 !== 0
                   ?
-                  <div>
-                    <img src={project.imageUrl} alt={`Picture of ${project.name}`}/>
-                    <div>
+                  <div className="project-container">
+                    <img className="project-image" src={project.imageUrl} alt={`Picture of ${project.name}`}/>
+                    <div className="project-info">
                       <h1>{project.name}</h1>
                       <p>{project.description}</p>
-                      <Link to={project.link}><div>Check it out &rarr;</div></Link>
+                      <Link to={project.link} target="_blank" rel="noopener noreferrer"><div className="project-cta">Check it out &rarr;</div></Link>
                     </div>
                   </div>
                   :
-                  <div>
-                    <div>
+                  <div className="project-container">
+                    <div className="project-info">
                       <h1>{project.name}</h1>
                       <p>{project.description}</p>
-                      <Link to={project.link}><div>Check it out &rarr;</div></Link>
+                      <Link to={project.link} target="_blank" rel="noopener noreferrer"><div className="project-cta">Check it out &rarr;</div></Link>
                     </div>
-                    <img src={project.imageUrl} alt={`Picture of ${project.name}`}/>
+                    <img className="project-image" src={project.imageUrl} alt={`Picture of ${project.name}`}/>
                   </div>                  
                 }
                 </div>
@@ -55,13 +58,13 @@ export default function Projects() {
             })
 
             return (
-              <>
+              <div>
                 {projectsMap}
-              </>
+              </div>
             )
           }}
         </Await>
       </Suspense>
-    </>
+    </main>
   )
 }
