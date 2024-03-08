@@ -5,6 +5,7 @@ import {
 import Layout from "./components/Layout"
 import Home from "./pages/Home"
 import Contact from "./pages/Contact"
+import Projects, {loader as projectsLoader} from "./pages/Projects"
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />
+      },
+      {
+        path: "projects",
+        element: <Projects />,
+        loader: projectsLoader
       }
     ]
   }
