@@ -27,7 +27,7 @@ export default function Projects() {
         <p>Stuff I did</p>
       </div>
 
-      <Suspense fallback={<h1>Loading...</h1>}>
+      <Suspense>
         <Await resolve={data.projects}>
           {projects => {
             const projectsMap = projects.map(project => {
