@@ -132,26 +132,60 @@ header {
 }
 
 .projects-title {
-  margin: 70px auto 50px;
+  margin: 100px auto 80px;
   text-align: center;
 }
 
-.projects-title p:nth-child(1) {
+.projects-title h1 {
   margin-bottom: 12px;
+  font-family: "Fraunces";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.projects-title p {
+  font-family: "Cabinet Grotesk";
+  font-size: 1rem;
 }
 
 .project-container {
   margin: 0 30px 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-image {
   width: 100%;
-  margin: 0;
+  /* margin: 0; */
 }
 
 .project-info {
   color: #0d0d0d;
-  margin: 0;
   background-color: #BFBFBF;
-  /* padding: 50px 25px; */
+  padding: 50px 25px;
+}
+
+.project-info h1 {
+  font-family: "Sharp Sans";
+  margin-bottom: 40px;
+}
+
+.project-info p {
+  font-family: "Cabinet Grotesk";
+  margin-bottom: 40px;
+}
+
+.project-cta {
+  color: #BFBFBF;
+  background-color: #0d0d0d;
+  padding: 10px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabinet Grotesk";
+}
+
+.project-info a {
+  text-decoration: none;
 }

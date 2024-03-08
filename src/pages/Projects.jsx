@@ -23,7 +23,7 @@ export default function Projects() {
   return (
     <main className="projects-container">
       <div className="projects-title">
-        <p className="project-sub-title">PROJECTS</p>
+        <h1 className="project-sub-title">PROJECTS</h1>
         <p>Stuff I did</p>
       </div>
 
