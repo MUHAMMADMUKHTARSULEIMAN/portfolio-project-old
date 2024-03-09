@@ -191,7 +191,7 @@ header {
 }
 
 .not-found-container {
-  min-width: calc(100wv - 90px);
+  width: calc(100wv - 90px);
   padding: 60px 30px;
   display: flex;
   justify-content: center;
@@ -222,7 +222,7 @@ header {
 }
 
 .not-found-button {
-  width: 80%;
+  /* width: 80%; */
   color: #0d0d0d;
   background-color: #BFBFBF;
   padding: 8px;
