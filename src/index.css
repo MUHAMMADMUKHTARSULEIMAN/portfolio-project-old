@@ -191,7 +191,7 @@ header {
 }
 
 .not-found-container {
-  width: calc(100wv - 90px);
+  height: calc(100vh - 60px);
   padding: 60px 30px;
   display: flex;
   justify-content: center;
