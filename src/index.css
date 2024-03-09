@@ -183,8 +183,48 @@ header {
   justify-content: center;
   align-items: center;
   font-family: "Cabinet Grotesk";
+  cursor: pointer;
 }
 
 .project-info a {
   text-decoration: none;
+}
+
+.not-found-container {
+  min-width: calc(100wv - 90px);
+  padding: 60px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+
+.not-found-header {
+  width: 100%;
+}
+
+.not-found-header h1 {
+  font-family: "Sharp Sans";
+  font-size: 9rem;
+  color: transparent;
+  -webkit-text-stroke: #BFBFBF 1px;
+}
+
+.not-found-container p {
+  font-family: "Fraunces";
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.not-found-container a {
+  text-decoration: none;
+}
+
+.not-found-button {
+  width: 80%;
+  color: #0d0d0d;
+  background-color: #BFBFBF;
+  padding: 8px;
+  font-family: "Cabinet Grotesk";
 }

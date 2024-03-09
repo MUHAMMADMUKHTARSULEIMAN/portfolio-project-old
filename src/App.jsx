@@ -6,12 +6,17 @@ import Layout from "./components/Layout"
 import Home from "./pages/Home"
 import Contact from "./pages/Contact"
 import Projects, {loader as projectsLoader} from "./pages/Projects"
+import NotFound from "./pages/NotFound"
 
 const router = createBrowserRouter([
   {
     path: "",
     element: <Layout />,
     children: [
+      {
+        path: "*",
+        element: <NotFound />
+      },
       {
         path: "/",
         element: <Home />
