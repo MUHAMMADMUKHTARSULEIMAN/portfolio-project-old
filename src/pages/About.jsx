@@ -1,8 +1,8 @@
 export default function About() {
   return (
     <div className="about-container">
-      <img src="images/about-image.jpg" alt="" />
-      <div>
+      <img className="about-image" src="images/about-image.jpg" alt="" />
+      <div className="about-info">
         <h1>WHO AM I?</h1>
         <p>
         Who am I as in who I really am or who am I as in what I do?

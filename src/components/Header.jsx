@@ -1,27 +1,18 @@
-// import {
-//   gsap,
-//   ScrollTrigger
-// } from "gsap";
-
 export default function Header() {
-  // const showAnim = gsap.from('.main-tool-bar', { 
-  //   yPercent: -100,
-  //   paused: true,
-  //   duration: 0.2
-  // }).progress(1);
-  
-  // ScrollTrigger.create({
-  //   start: "top top",
-  //   end: "max",
-  //   onUpdate: (self) => {
-  //     self.direction === -1 ? showAnim.play() : showAnim.reverse()
-  //   }
-  // });
+  const openMenu = () => {
+    return (
+      <div style={{backgroundColor: "green", width: "100vw", top: 0, left: 0}}>
+        <div>
+          <h1 style={{color: "red"}}>Here We Go</h1>
+        </div>
+      </div>
+    )
+  }
   
   return (
     <header>
       <p className="hero">SULEI<span className="hero-span">MAN</span></p>
-      <img className="menu" src="images/menu-2.png" alt="Menu" />
+      <img className="menu" onClick={openMenu} src="images/menu-2.png" alt="Menu" />
     </header>
   )
 }
