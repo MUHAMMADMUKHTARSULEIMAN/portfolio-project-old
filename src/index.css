@@ -192,7 +192,7 @@ header {
 
 .not-found-container {
   height: calc(100vh - 60px);
-  padding: 60px 30px;
+  /* padding: 60px 30px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,7 +211,7 @@ header {
 }
 
 .not-found-container p {
-  font-family: "Fraunces";
+  font-family: "Sharp Sans";
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 40px;
@@ -222,7 +222,6 @@ header {
 }
 
 .not-found-button {
-  /* width: 80%; */
   color: #0d0d0d;
   background-color: #BFBFBF;
   padding: 8px;
