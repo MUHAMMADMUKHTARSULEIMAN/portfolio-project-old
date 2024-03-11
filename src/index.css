@@ -76,7 +76,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 4rem;
   color: var(--text);
   font-family: var(--sharp-heading);
   font-size: 1.5rem;
@@ -91,7 +90,7 @@ header {
 }
 
 .menu-container hr {
-  height: 1px;
+  height: .99px;
   background-color: var(--text);
   border: none;
 }
@@ -101,8 +100,7 @@ header {
   cursor: pointer;
 }
 
-.active-link {
-  text-decoration: underline;
+.active-link, a:hover {
   font-weight: 600;
 }
 
@@ -309,7 +307,7 @@ header {
   padding-top: var(--container-padding-right);
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) {
   header {
     font-weight: 400;
   }
@@ -350,5 +348,35 @@ header {
   .not-found-button {
     padding: 8px;
     font-size: 1.2rem;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px var(--container-padding-right);
+  }
+  
+  .contact-image-container {
+    width: 60%;
+    padding-bottom: var(--image-bottom-padding);
+  }
+  
+  .contact-image {
+    width: 100%;
+  }
+  
+  .contact-sub-container {
+    width: 40%;
+    padding-left: var(--container-padding-right);
+  }
+
+  .contact-heading {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .contact-body {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 }

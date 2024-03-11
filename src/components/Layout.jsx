@@ -36,7 +36,7 @@ export default function Layout() {
 
         </NavLink>
         {
-          windowWidth < 700 ?
+          windowWidth < 750 ?
           <div className="mobile-nav">
             <img
             className="theme-icon"
@@ -79,7 +79,7 @@ export default function Layout() {
           </div>        
         }
       </header>
-      {menu && windowWidth < 700 &&
+      {menu && windowWidth < 750 &&
       <div className="menu-container">
         <NavLink onClick={menu ? toggleMenu : ""} className={({isActive}) => isActive ? "active-link" : ""} to="/about">
           <p>ABOUT</p>
@@ -94,7 +94,7 @@ export default function Layout() {
         </NavLink>
       </div>
       }
-      {menu && windowWidth < 700 ? "" : <Outlet />}
+      {menu && windowWidth < 750 ? "" : <Outlet />}
     </div>
   )
 }
