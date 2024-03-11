@@ -45,6 +45,10 @@ header {
   background-color: var(--text);
 }
 
+.theme-icon {
+  width: 1.5rem;
+}
+
 .menu {
   width: 1.5rem;
 }
@@ -109,8 +113,6 @@ header {
 .projects-container {
   background-color: var(--background);
   color: var(--text);
-  /* margin: 70px 30px; */
-  /* text-align: center; */
 }
 
 .projects-title {
@@ -211,6 +213,8 @@ header {
 
 .about-container {
   margin: 100px auto;
+  color: var(--text);
+  background-color: var(--background);
 }
 
 .about-image {

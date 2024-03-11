@@ -18,8 +18,9 @@ export default function Projects() {
       e.preventDefault();
       setWindowWidth(window.innerWidth);
     });
-  }, [])
+  }, []);
   const data = useLoaderData();
+  
   return (
     <main className="projects-container">
       <div className="projects-title">
