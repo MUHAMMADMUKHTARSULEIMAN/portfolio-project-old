@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import {Link, Outlet} from "react-router-dom"
+import {NavLink, Outlet} from "react-router-dom"
 // import Header from "./Header"
 import { useState } from "react"
 import useLocalStorage from "use-local-storage"
@@ -26,14 +26,14 @@ export default function Layout() {
     <div data-theme={darkTheme}>
       <header>
         {/* <p className="hero">SULEI<span className="hero-span">MAN</span></p> */}
-        <Link to="/">
+        <NavLink to="/">
           <img
           src={darkTheme ? "images/hero-dark.png" : "images/hero-light.png"}
           alt="Logo"
           className="hero"></img>
-        </Link>
+        </NavLink>
         {
-          windowWidth < 650 ?
+          windowWidth < 700 ?
           <div className="mobile-nav">
             <img
             className="theme-icon"
@@ -58,25 +58,25 @@ export default function Layout() {
             />
           </div> :
           <div className="desktop-nav">
-            <Link><p>ABOUT</p></Link>
-            <Link><p>PROJECTS</p></Link>
-            <Link><p>CONTACT</p></Link>
             <img
             className="theme-icon"
             onClick={switchTheme}
             src={darkTheme ? "images/light-mode.png" : "images/dark-mode.png"}
             alt="Theme icon"
-            />
+            />            
+            <NavLink to="/about"><p>ABOUT</p></NavLink>
+            <NavLink to="projects"><p>PROJECTS</p></NavLink>
+            <NavLink to="contact"><p>CONTACT</p></NavLink>
+
           </div>        
         }
-
       </header>
-      {menu && 
+      {menu && windowWidth < 700 &&
       <div className="menu-container">
         
       </div>
       }
-      {menu ? "" : <Outlet />}
+      {menu && windowWidth < 700 ? "" : <Outlet />}
     </div>
   )
 }

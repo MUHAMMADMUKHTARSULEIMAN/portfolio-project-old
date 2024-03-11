@@ -31,11 +31,12 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 20px var(--container-padding-right);
+  padding: 0px var(--container-padding-right);
+  /* padding-top: 7px; */
   background-color: var(--background);
   font-family: var(--sharp-heading);
-  font-weight: 600;
-  font-size: 1.5rem;
+  /* font-weight: 600;
+  font-size: 1.5rem; */
   border-bottom: 1px solid var(--text);
 }
 
@@ -270,4 +271,23 @@ header {
 .about-info p {
   font-family: var(--body);
   padding-top: var(--container-padding-right);
+}
+
+@media only screen and (min-width: 700px) {
+  header {
+    font-weight: 600;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    gap: 25px;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    color: var(--text);
+  }
 }
