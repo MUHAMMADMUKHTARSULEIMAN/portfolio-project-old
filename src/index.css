@@ -1,32 +1,15 @@
-/* @import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
-body { 
-  font-family: "Signika Negative", sans-serif; 
-  font-weight: 300;
-  margin: 0;
-  padding: 0;
+[data-theme="true"] {
+  --background: #0D0D0D;
+  --text: #BFBFBF;
 }
 
-.main-tool-bar {
-  height: 80px;
-  background: red;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  transition: ease 0.4s;
-  &--scrolled {
-    height: 40px;
-  }
+:root {
+  --background: #BFBFBF;
+  --text: #0D0D0D;
+  --sharp-heading: "Sharp Sans", sans-serif;
+  --body: "Cabinet Grotesk", sans-serif;
+  --fraunces-heading: "Fraunces", serif;
 }
-
-.scrollable-area {
-  height: 200vh;
-} */
 
 * {
   box-sizing: border-box;
@@ -35,8 +18,8 @@ body {
 
 body {
   margin: 0 auto;
-  color: #BFBFBF;
-  background-color: #0d0d0d;
+  color: var(--text);
+  background-color: var(--background);
 }
 
 header {
@@ -45,50 +28,50 @@ header {
   align-items: center;
   height: 60px;
   padding: 20px 30px;
-  background-color: #0d0d0d;
-  font-family: "Sharp sans";
+  background-color: var(--background);
+  font-family: var(--sharp-heading);
   font-weight: 600;
   font-size: 1.5rem;
-  border-bottom: 1px solid #BFBFBF;
+  border-bottom: 1px solid var(--text);
 }
 
 .hero {
-  color: #BFBFBF;
-  background-color: #0d0d0d;
+  color: var(--text);
+  background-color: var(--background);
 }
 
 .hero-span {
-  color: #0d0d0d;
-  background-color: #BFBFBF;
+  color: var(--background);
+  background-color: var(--text);
 }
 
 .menu {
-  width: 2.5rem;
+  width: 1.5rem;
 }
 
 .home {
   display: flex;
   align-items: center;
-  background-color: #0d0d0d;
-  color: #BFBFBF;
+  background-color: var(--background);
+  color: var(--text);
   padding: 0px 30px;
   height: calc(100vh - 60px);
 }
 
 .home-para {
-  font-family: "Cabinet Grotesk";
+  font-family: var(--body);
   font-size: small;
 }
 
 .home-main {
-  font-family: "Sharp Sans";
+  font-family: var(--sharp-heading);
   font-size: 3rem;
   font-weight: 700;
 }
 
 .name-stroke {
   color: transparent;
-  -webkit-text-stroke-color: #BFBFBF;
+  -webkit-text-stroke-color: var(--text);
   -webkit-text-stroke-width: 1px;
 }
 
@@ -96,7 +79,7 @@ header {
   width: 100%;
   margin: 50px 0;
   text-align: center;
-  font-family: "Fraunces";
+  font-family: var(--fraunces-heading);
   font-style: italic;
   font-size: small;
   font-weight: 300;
@@ -114,18 +97,18 @@ header {
 .contact-heading {
   font-size: .75rem;
   font-weight: 350;
-  font-family: "Fraunces";
+  font-family: var(--fraunces-heading);
 }
 
 .contact-body {
   font-weight: 500;
-  font-family: "Cabinet Grotesk";
+  font-family: var(--body);
   line-height: 1.5rem;
 }
 
 .projects-container {
-  background-color: #0d0d0d;
-  color: #BFBFBF;
+  background-color: var(--background);
+  color: var(--text);
   /* margin: 70px 30px; */
   /* text-align: center; */
 }
@@ -137,13 +120,13 @@ header {
 
 .projects-title h1 {
   margin-bottom: 12px;
-  font-family: "Fraunces";
+  font-family: var(--fraunces-heading);
   font-size: 1rem;
   font-weight: 500;
 }
 
 .projects-title p {
-  font-family: "Cabinet Grotesk";
+  font-family: var(--body);
 }
 
 .project-container {
@@ -158,30 +141,30 @@ header {
 }
 
 .project-info {
-  color: #0d0d0d;
-  background-color: #BFBFBF;
+  color: var(--background);
+  background-color: var(--text);
   padding: 50px 25px;
 }
 
 .project-info h1 {
-  font-family: "Sharp Sans";
+  font-family: var(--sharp-heading);
   margin-bottom: 40px;
 }
 
 .project-info p {
-  font-family: "Cabinet Grotesk";
+  font-family: var(--body);
   margin-bottom: 40px;
 }
 
 .project-cta {
-  color: #BFBFBF;
-  background-color: #0d0d0d;
+  color: var(--text);
+  background-color: var(--background);
   padding: 10px;
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Cabinet Grotesk";
+  font-family: var(--body);
   cursor: pointer;
 }
 
@@ -191,7 +174,6 @@ header {
 
 .not-found-container {
   height: calc(100vh - 60px);
-  /* padding: 60px 30px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,14 +185,14 @@ header {
 }
 
 .not-found-header h1 {
-  font-family: "Sharp Sans";
+  font-family: var(--sharp-heading);
   font-size: 9rem;
   color: transparent;
-  -webkit-text-stroke: #BFBFBF 1px;
+  -webkit-text-stroke: var(--text) 1px;
 }
 
 .not-found-container p {
-  font-family: "Sharp Sans";
+  font-family: var(--sharp-heading);
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 40px;
@@ -221,10 +203,10 @@ header {
 }
 
 .not-found-button {
-  color: #0d0d0d;
-  background-color: #BFBFBF;
+  color: var(--background);
+  background-color: var(--text);
   padding: 8px;
-  font-family: "Cabinet Grotesk";
+  font-family: var(--body);
 }
 
 .about-container {
@@ -242,13 +224,13 @@ header {
 
 .about-info h1 {
   margin-bottom: 35px;
-  font-family: "Fraunces";
+  font-family: var(--fraunces-heading);
   font-size: 1rem;
   font-weight: 500;
   text-align: center;
 }
 
 .about-info p {
-  font-family: "Cabinet Grotesk";
+  font-family: var(--body);
   margin-bottom: 30px;
 }
