@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import {Outlet} from "react-router-dom"
+import {Link, Outlet} from "react-router-dom"
 // import Header from "./Header"
 import { useState } from "react"
 import useLocalStorage from "use-local-storage"
@@ -25,10 +25,16 @@ export default function Layout() {
   return (
     <div data-theme={darkTheme}>
       <header>
-        <p className="hero">SULEI<span className="hero-span">MAN</span></p>
+        {/* <p className="hero">SULEI<span className="hero-span">MAN</span></p> */}
+        <Link to="/">
+          <img
+          src={darkTheme ? "images/hero-dark.png" : "images/hero-light.png"}
+          alt="Logo"
+          className="hero"></img>
+        </Link>
         {
           windowWidth < 650 ?
-          <div>
+          <div className="mobile-nav">
             <img
             className="theme-icon"
             onClick={switchTheme}

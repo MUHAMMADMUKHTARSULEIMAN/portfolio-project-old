@@ -9,15 +9,18 @@
   --sharp-heading: "Sharp Sans", sans-serif;
   --body: "Cabinet Grotesk", sans-serif;
   --fraunces-heading: "Fraunces", serif;
+  --container-padding-top: 100px;
+  --container-padding-right: 25px
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0 auto;
+  padding: 0 auto;
   color: var(--text);
   background-color: var(--background);
 }
@@ -27,7 +30,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 20px 30px;
+  padding: 20px var(--container-padding-right);
   background-color: var(--background);
   font-family: var(--sharp-heading);
   font-weight: 600;
@@ -35,22 +38,35 @@ header {
   border-bottom: 1px solid var(--text);
 }
 
-.hero {
+/* .hero {
   color: var(--text);
   background-color: var(--background);
-}
+} */
 
-.hero-span {
+/* .hero-span {
   color: var(--background);
   background-color: var(--text);
+} */
+
+.hero {
+  width: 9rem;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px
 }
 
 .theme-icon {
   width: 1.5rem;
+  cursor: pointer;
 }
 
 .menu {
   width: 1.5rem;
+  cursor: pointer;
 }
 
 .home {
@@ -58,7 +74,7 @@ header {
   align-items: center;
   background-color: var(--background);
   color: var(--text);
-  padding: 0px 30px;
+  padding: 0px var(--container-padding-right);
   height: calc(100vh - 60px);
 }
 
@@ -79,9 +95,14 @@ header {
   -webkit-text-stroke-width: 1px;
 }
 
+.contact-container {
+  color: var(--text);
+  background-color: var(--background);
+}
+
 .contact-image-container {
   width: 100%;
-  margin: 50px 0;
+  padding: 50px 0;
   text-align: center;
   font-family: var(--fraunces-heading);
   font-style: italic;
@@ -93,9 +114,9 @@ header {
   width: 100%;
 }
 
-.contact-container {
+.contact-sub-container {
   padding: 0 20px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .contact-heading {
@@ -116,12 +137,12 @@ header {
 }
 
 .projects-title {
-  margin: 100px auto 80px;
+  padding: 100px auto 80px;
   text-align: center;
 }
 
 .projects-title h1 {
-  margin-bottom: 12px;
+  padding-bottom: 12px;
   font-family: var(--fraunces-heading);
   font-size: 1rem;
   font-weight: 500;
@@ -132,14 +153,14 @@ header {
 }
 
 .project-container {
-  margin: 0 30px 50px;
+  padding: 0 var(--container-padding-right) 50px;
   display: flex;
   flex-direction: column;
 }
 
 .project-image {
   width: 100%;
-  /* margin: 0; */
+  /* padding: 0; */
 }
 
 .project-info {
@@ -150,12 +171,12 @@ header {
 
 .project-info h1 {
   font-family: var(--sharp-heading);
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .project-info p {
   font-family: var(--body);
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .project-cta {
@@ -179,7 +200,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center
+  text-align: center;
+  color: var(--text);
+  background-color: var(--background)
 }
 
 .not-found-header {
@@ -197,7 +220,7 @@ header {
   font-family: var(--sharp-heading);
   font-size: 1.2rem;
   font-weight: 500;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .not-found-container a {
@@ -212,22 +235,22 @@ header {
 }
 
 .about-container {
-  margin: 100px auto;
+  padding: 100px auto;
   color: var(--text);
   background-color: var(--background);
 }
 
 .about-image {
   width: 100%;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .about-info {
-  padding: 0 30px;
+  padding: 0 var(--container-padding-right);
 }
 
 .about-info h1 {
-  margin-bottom: 35px;
+  padding-bottom: 35px;
   font-family: var(--fraunces-heading);
   font-size: 1rem;
   font-weight: 500;
@@ -236,5 +259,5 @@ header {
 
 .about-info p {
   font-family: var(--body);
-  margin-bottom: 30px;
+  padding-bottom: var(--container-padding-right);
 }

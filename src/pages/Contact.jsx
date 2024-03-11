@@ -1,11 +1,11 @@
 export default function Contact() {
   return (
-    <main className="contact">
+    <main className="contact-container">
       <div className="contact-image-container">
         <img className="contact-image" src="images/contact-image.jpg" alt="A picture in black and white"/>
         <p>An image I found on Pexels that I thought looked cool</p>     
       </div>
-      <div className="contact-container">
+      <div className="contact-sub-container">
         <p className="contact-heading">INQUIRIES</p>
         <br/>
         <p className="contact-body">muhammadmukhtarsuleiman@gmail.com</p>
