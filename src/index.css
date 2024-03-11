@@ -50,8 +50,13 @@ header {
   background-color: var(--text);
 } */
 
-.hero {
+.hero-container {
+  padding-top: 4px;
   width: 9rem;
+}
+
+.hero {
+  width: 100%;
   cursor: pointer;
 }
 
@@ -66,9 +71,36 @@ header {
   cursor: pointer;
 }
 
+.menu-container {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: var(--text);
+  font-family: var(--sharp-heading);
+  font-size: 3rem;
+  font-weight: 600;
+  height: calc(100vh - 60px);
+  padding: 0 var(--container-padding-right);
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* .menu-container p {
+  line-height: 8rem;
+} */
+
 .menu {
   width: 1.5rem;
   cursor: pointer;
+}
+
+.active-link {
+  text-decoration: underline;
+  font-weight: 800;
 }
 
 .home {
