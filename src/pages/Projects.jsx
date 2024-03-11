@@ -25,7 +25,7 @@ export default function Projects() {
     <main className="projects-container">
       <div className="projects-title">
         <h1 className="project-sub-title">PROJECTS</h1>
-        <p>Stuff I did</p>
+        <p>Stuff I did.</p>
       </div>
 
       <Suspense>

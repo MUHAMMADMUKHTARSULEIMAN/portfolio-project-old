@@ -10,7 +10,8 @@
   --body: "Cabinet Grotesk", sans-serif;
   --fraunces-heading: "Fraunces", serif;
   --container-padding-top: 100px;
-  --container-padding-right: 25px
+  --container-padding-right: 25px;
+  --image-bottom-padding: 80px;                                                            
 }
 
 * {
@@ -81,6 +82,8 @@ header {
 .home-para {
   font-family: var(--body);
   font-size: small;
+  margin-bottom: -8px;
+  margin-left: 2px;
 }
 
 .home-main {
@@ -98,11 +101,12 @@ header {
 .contact-container {
   color: var(--text);
   background-color: var(--background);
+  padding: var(--container-padding-top) 0;
 }
 
 .contact-image-container {
   width: 100%;
-  padding: 50px 0;
+  padding-bottom: var(--image-bottom-padding);
   text-align: center;
   font-family: var(--fraunces-heading);
   font-style: italic;
@@ -115,8 +119,12 @@ header {
 }
 
 .contact-sub-container {
-  padding: 0 20px;
-  padding-bottom: 50px;
+  padding: 0 var(--container-padding-right);
+}
+
+.contact-sub-container a {
+  color: var(--text);
+  text-decoration: none;
 }
 
 .contact-heading {
@@ -128,21 +136,22 @@ header {
 .contact-body {
   font-weight: 500;
   font-family: var(--body);
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .projects-container {
   background-color: var(--background);
   color: var(--text);
+  padding: var(--container-padding-top) 0;
 }
 
 .projects-title {
-  padding: 100px auto 80px;
+  padding-bottom: var(--image-bottom-padding);
   text-align: center;
 }
 
 .projects-title h1 {
-  padding-bottom: 12px;
+  line-height: 2.5rem;
   font-family: var(--fraunces-heading);
   font-size: 1rem;
   font-weight: 500;
