@@ -26,7 +26,7 @@ export default function Layout() {
     <div data-theme={darkTheme}>
       <header>
         {/* <p className="hero">SULEI<span className="hero-span">MAN</span></p> */}
-        <NavLink to="/">
+        <NavLink to="/" onClick={menu ? toggleMenu : ""}>
           <div className="hero-container">
             <img
             src={darkTheme ? "images/hero-dark.png" : "images/hero-light.png"}
@@ -81,15 +81,15 @@ export default function Layout() {
       </header>
       {menu && windowWidth < 700 &&
       <div className="menu-container">
-        <NavLink className={({isActive}) => isActive ? "active-link" : ""} to="/about">
+        <NavLink onClick={menu ? toggleMenu : ""} className={({isActive}) => isActive ? "active-link" : ""} to="/about">
           <p>ABOUT</p>
         </NavLink>
         <hr/>
-        <NavLink className={({isActive}) => isActive ? "active-link" : ""} to="projects">
+        <NavLink onClick={menu ? toggleMenu : ""} className={({isActive}) => isActive ? "active-link" : ""} to="projects">
           <p>PROJECTS</p>
         </NavLink>
         <hr/>
-        <NavLink className={({isActive}) => isActive ? "active-link" : ""} to="contact">
+        <NavLink onClick={menu ? toggleMenu : ""} className={({isActive}) => isActive ? "active-link" : ""} to="contact">
           <p>CONTACT</p>
         </NavLink>
       </div>
