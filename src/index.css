@@ -169,7 +169,6 @@ header {
 
 .project-image {
   width: 100%;
-  /* padding: 0; */
 }
 
 .project-info {
@@ -206,6 +205,7 @@ header {
 
 .not-found-container {
   height: calc(100vh - 60px);
+  padding: 0 var(--container-padding-right);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,6 +221,7 @@ header {
 .not-found-header h1 {
   font-family: var(--sharp-heading);
   font-size: 9rem;
+  letter-spacing: .5rem;
   color: transparent;
   -webkit-text-stroke: var(--text) 1px;
 }
@@ -228,7 +229,7 @@ header {
 .not-found-container p {
   font-family: var(--sharp-heading);
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   padding-bottom: 40px;
 }
 
