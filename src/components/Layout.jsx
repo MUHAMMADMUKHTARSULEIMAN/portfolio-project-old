@@ -84,9 +84,11 @@ export default function Layout() {
         <NavLink className={({isActive}) => isActive ? "active-link" : ""} to="/about">
           <p>ABOUT</p>
         </NavLink>
+        <hr/>
         <NavLink className={({isActive}) => isActive ? "active-link" : ""} to="projects">
           <p>PROJECTS</p>
-          </NavLink>
+        </NavLink>
+        <hr/>
         <NavLink className={({isActive}) => isActive ? "active-link" : ""} to="contact">
           <p>CONTACT</p>
         </NavLink>
