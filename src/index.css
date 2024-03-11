@@ -245,14 +245,14 @@ header {
 }
 
 .about-container {
-  padding: 100px auto;
+  padding: var(--container-padding-top) 0;
   color: var(--text);
   background-color: var(--background);
 }
 
 .about-image {
   width: 100%;
-  padding-bottom: 80px;
+  padding-bottom: var(--image-bottom-padding);
 }
 
 .about-info {
@@ -260,7 +260,7 @@ header {
 }
 
 .about-info h1 {
-  padding-bottom: 35px;
+  /* padding-bottom: 35px; */
   font-family: var(--fraunces-heading);
   font-size: 1rem;
   font-weight: 500;
@@ -269,5 +269,5 @@ header {
 
 .about-info p {
   font-family: var(--body);
-  padding-bottom: var(--container-padding-right);
+  padding-top: var(--container-padding-right);
 }

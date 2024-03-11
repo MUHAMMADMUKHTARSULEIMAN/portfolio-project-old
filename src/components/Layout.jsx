@@ -57,10 +57,16 @@ export default function Layout() {
             alt="Menu"
             />
           </div> :
-          <div>
-            <p></p>
-            <p></p>
-            <p></p>
+          <div className="desktop-nav">
+            <Link><p>ABOUT</p></Link>
+            <Link><p>PROJECTS</p></Link>
+            <Link><p>CONTACT</p></Link>
+            <img
+            className="theme-icon"
+            onClick={switchTheme}
+            src={darkTheme ? "images/light-mode.png" : "images/dark-mode.png"}
+            alt="Theme icon"
+            />
           </div>        
         }
 
