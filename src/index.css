@@ -76,6 +76,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 4rem;
   color: var(--text);
   font-family: var(--sharp-heading);
   font-size: 1.5rem;
@@ -108,6 +109,7 @@ header {
 .home {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--background);
   color: var(--text);
   padding: 0px var(--container-padding-right);
@@ -323,5 +325,30 @@ header {
   .desktop-nav a {
     text-decoration: none;
     color: var(--text);
+  }
+  
+  .home-para {
+    font-size: 1rem;
+    margin-bottom: -15px;
+    margin-left: 5px;
+  }
+  
+  .home-main {
+    font-size: 6rem;
+  }
+
+  .not-found-header h1 {
+    font-size: 12rem;
+    letter-spacing: 1rem;
+  }
+  
+  .not-found-container p {
+    font-size: 1.5rem;
+    padding-bottom: 70px;
+  }
+  
+  .not-found-button {
+    padding: 8px;
+    font-size: 1.2rem;
   }
 }
