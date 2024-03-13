@@ -352,7 +352,7 @@ header {
 
   .contact-container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 50px var(--container-padding-right);
   }
   
@@ -376,7 +376,41 @@ header {
   }
   
   .contact-body {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+  }
+
+  .project-image {
+    width: 50%;
+    /* height: 50%; */
+  }
+
+  .project-info {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 75px 50px;
+  }
+
+  .project-info p, .project-info h1 {
+    padding-bottom: 40px;
+  }
+
+  .about-container {
+    display: flex;
+  }
+
+  .about-image {
+    width: 60%;
+  }
+
+  .about-info {
+    width: 40%;
+    padding: 0 50px;
   }
 }
