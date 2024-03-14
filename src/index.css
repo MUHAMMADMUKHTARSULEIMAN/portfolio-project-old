@@ -1,15 +1,15 @@
 [data-theme="true"] {
-  /* --background: #0D0D0D; */
-  /* --text: #BFBFBF; */
-  --background: #082E41;
-  --text: #EF525B;
+  --background: #0D0D0D;
+  --text: #BFBFBF;
+  /* --background: #082E41; */
+  /* --text: #EF525B; */
 }
 
 :root {
-  /* --background: #BFBFBF; */
-  /* --text: #0D0D0D; */
-  --background: #EF525B;
-  --text: #082E41;
+  --background: #BFBFBF;
+  --text: #0D0D0D;
+  /* --background: #EF525B; */
+  /* --text: #082E41; */
   --sharp-heading: "Sharp Sans", sans-serif;
   --body: "Cabinet Grotesk", sans-serif;
   --fraunces-heading: "Fraunces", serif;
