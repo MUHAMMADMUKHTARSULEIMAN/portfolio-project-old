@@ -84,7 +84,7 @@ header {
   font-weight: 500;
   height: calc(100vh - 60px);
   padding: 0 var(--container-padding-right);
-  padding-top: 48px;
+  /* padding-top: 48px; */
 }
 
 .menu-container a {
