@@ -15,10 +15,10 @@ export default function Contact() {
         <br/>
         <p className="contact-heading">SOCIALS</p>
         <br/>
-        <p className="contact-body">GITHUB</p>
-        <p className="contact-body">X</p>
-        <p className="contact-body">LINKEDIN</p>
-        <p className="contact-body">INSTAGRAM</p>
+        <Link to="https://github.com/muhammadmukhtarsuleiman" target="_blank" rel="noopener noreferrer"><p className="contact-body">GITHUB</p></Link>
+        <Link to="https://twitter.com/LeaderofTomoro" target="_blank" rel="noopener noreferrer"><p className="contact-body">X</p></Link>
+        <Link to="https://linkedin.com/in/muhammadmukhtarsuleiman" target="_blank" rel="noopener noreferrer"><p className="contact-body">LINKEDIN</p></Link>
+        <Link to="https://instagram.com/_MMUKHTAR_" target="_blank" rel="noopener noreferrer"><p className="contact-body">INSTAGRAM</p></Link>
       </div>
     </main>
   )
