@@ -76,15 +76,14 @@ header {
   background-color: var(--background);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  /* gap: 48px; */
+  gap: 48px;
   color: var(--text);
   font-family: var(--sharp-heading);
   font-size: 24px;
   font-weight: 500;
   height: calc(100vh - 60px);
   padding: 0 var(--container-padding-right);
-  /* padding-top: 48px; */
+  padding-top: 48px;
 }
 
 .menu-container a {
