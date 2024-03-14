@@ -28,7 +28,7 @@ export default function Projects() {
         <p>Stuff I did.</p>
       </div>
 
-      <Suspense>
+      <Suspense fallback={<h1 className="loading-header">Loading...</h1>}>
         <Await resolve={data.projects}>
           {projects => {
             const projectsMap = projects.map(project => {
@@ -41,7 +41,7 @@ export default function Projects() {
                     <div className="project-info">
                       <h1>{project.name}</h1>
                       <p>{project.description}</p>
-                      <Link to={project.link} target="_blank" rel="noopener noreferrer"><div className="project-cta">Check it out &rarr;</div></Link>
+                      <Link to={project.link} target="_blank" rel="noopener noreferrer"><div className="project-cta">Check it out</div></Link>
                     </div>
                   </div>
                   :
