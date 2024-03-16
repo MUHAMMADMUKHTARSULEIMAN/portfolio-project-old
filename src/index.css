@@ -1,12 +1,12 @@
 [data-theme="true"] {
   --background: #0D0D0D;
-  --text: #BFBFBF;
+  --text: #DAA520;
   /* --background: #082E41; */
   /* --text: #EF525B; */
 }
 
 :root {
-  --background: #BFBFBF;
+  --background: #DAA520;
   --text: #0D0D0D;
   /* --background: #EF525B; */
   /* --text: #082E41; */
