@@ -1,10 +1,19 @@
-import { useEffect } from "react"
+import { useEffect} from "react"
+import gsap from "gsap";
+import {useGSAP} from "@gsap/react"
 import {NavLink, Outlet} from "react-router-dom"
-// import Header from "./Header"
 import { useState } from "react"
 import useLocalStorage from "use-local-storage"
 
 export default function Layout() {
+  gsap.registerPlugin(useGSAP)
+  useGSAP(() => {
+    const tl = gsap.timeline()
+    tl.from(".header", {opacity: 0, y: -64, duration: 2, ease: "elastic.inOut"})
+    tl.from(".outlet", {opacity: 0, duration: 2, ease: "circle.inOut"})
+  })
+
+
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   useEffect(() => {
     window.addEventListener('resize', (e) => {
@@ -24,7 +33,7 @@ export default function Layout() {
 
   return (
     <div data-theme={darkTheme}>
-      <header>
+      <header className="header">
         {/* <p className="hero">SULEI<span className="hero-span">MAN</span></p> */}
         <NavLink to="/" onClick={menu ? toggleMenu : ""}>
           <div className="hero-container">
@@ -94,7 +103,7 @@ export default function Layout() {
         </NavLink>
       </div>
       }
-      {menu && windowWidth < 750 ? "" : <Outlet />}
+      {menu && windowWidth < 750 ? "" : <div className="outlet"><Outlet/></div>}
     </div>
   )
 }

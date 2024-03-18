@@ -1,12 +1,12 @@
 [data-theme="true"] {
   --background: #0D0D0D;
-  --text: #DAA520;
+  --text: #BFBFBF;
   /* --background: #082E41; */
   /* --text: #EF525B; */
 }
 
 :root {
-  --background: #DAA520;
+  --background: #BFBFBF;
   --text: #0D0D0D;
   /* --background: #EF525B; */
   /* --text: #082E41; */
@@ -312,6 +312,7 @@ header {
 .loading-header {
   font-family: var(--sharp-heading);
   text-align: center;
+  min-height: calc(100vh - 64px);
 }
 
 @media only screen and (min-width: 750px) {
