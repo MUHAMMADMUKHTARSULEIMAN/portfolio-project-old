@@ -34,7 +34,7 @@ export default function Projects() {
             const projectsMap = projects.map(project => {
               return (
                 <div key={project.id}>
-                  {windowWidth < 750 || project.id % 2 !== 0
+                  {windowWidth < 750 || project.id % 2 === 0
                   ?
                   <div className="project-container">
                     <img className="project-image" src={project.imageUrl} alt={`Picture of ${project.name}`}/>

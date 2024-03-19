@@ -41,6 +41,24 @@ header {
   border-bottom: 1px solid var(--text);
 }
 
+/* .main-tool-bar {
+  height: 80px;
+  background: red;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: ease 0.4s;
+  &--scrolled {
+    height: 40px;
+  }
+} */
+
 /* .hero {
   color: var(--text);
   background-color: var(--background);

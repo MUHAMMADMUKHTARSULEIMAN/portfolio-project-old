@@ -9,8 +9,13 @@ export default function Layout() {
   gsap.registerPlugin(useGSAP)
   useGSAP(() => {
     const tl = gsap.timeline()
-    tl.from(".header", {opacity: 0, y: -64, duration: 2, ease: "elastic.inOut"})
-    tl.from(".outlet", {opacity: 0, duration: 2, ease: "circle.inOut"})
+    // tl.from(".header", {opacity: 0, y: -64, duration: 1, delay: 1, ease: "slow"})
+    tl.from(".hero", {opacity: 0, duration: 1.5, scale: 0.2, delay: 1, ease: "circ.in"})
+    tl.from(".theme-icon", {opacity: 0, duration: 1, ease: "expo.in"}, "+=1")
+    tl.from(".menu", {opacity: 0, duration: 1,scale: 0.2, ease: "expo.in"})
+    tl.from(".home-para", {opacity: 0, duration: 1, scale: 0.2, ease: "expo.in"})
+    tl.from(".home-main", {duration: 1, opacity: 0, scale: 0.2, ease: "expo.in"}, "+=.5")
+    // tl.from(".outlet", {opacity: 0, duration: 2, ease: "circle.inOut"})
   })
 
 
@@ -40,7 +45,8 @@ export default function Layout() {
             <img
             src={darkTheme ? "images/hero-dark.png" : "images/hero-light.png"}
             alt="Logo"
-            className="hero"></img>            
+            className="hero"
+            />       
           </div>
 
         </NavLink>
