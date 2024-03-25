@@ -313,21 +313,40 @@ header {
   font-family: var(--sharp-heading);
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  /* align-items: center; */
+  /* text-align: center; */
   min-height: calc(100vh - 64px);
 }
 
 .loading-container {
-  color: var(--text);
-  background-color: var(--background);
-  width: 25vw;
-  height: 25vw;
+  margin: 0 auto;
+  color: var(--background);
+  background-color: var(--text);
+  width: 96px;
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  /* padding: 16px; */
+  font-family: var(--sharp-heading);
 }
 
 .loading-sub-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.loading-container h1 {
+  text-align: center;
+  letter-spacing: -8px;
+  word-spacing: -8px;
+  line-height: 40px;
+  font-size: 48px;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 750px) {

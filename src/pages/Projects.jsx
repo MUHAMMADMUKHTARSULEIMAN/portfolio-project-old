@@ -29,7 +29,7 @@ export default function Projects() {
         <p>Stuff I did.</p>
       </div>
 
-      <Suspense fallback={<h1 className="loading-header"><Loading /></h1>}>
+      <Suspense fallback={<div className="loading-header"><Loading /></div>}>
         <Await resolve={data.projects}>
           {projects => {
             const projectsMap = projects.map(project => {
