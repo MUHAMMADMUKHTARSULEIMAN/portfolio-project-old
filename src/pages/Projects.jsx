@@ -5,6 +5,7 @@ import {
   Link,
   useLoaderData
 } from "react-router-dom"
+import Loading from "../components/Loading";
 import { getProjects } from "../api";
 
 export async function loader() {
@@ -28,7 +29,7 @@ export default function Projects() {
         <p>Stuff I did.</p>
       </div>
 
-      <Suspense fallback={<h1 className="loading-header">Loading...</h1>}>
+      <Suspense fallback={<h1 className="loading-header"><Loading /></h1>}>
         <Await resolve={data.projects}>
           {projects => {
             const projectsMap = projects.map(project => {
